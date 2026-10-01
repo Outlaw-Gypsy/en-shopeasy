@@ -85,7 +85,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           password: ${{ secrets.EC2_PASSWORD }}
-          source: "index.html,styles.css,app.js"
+          source: "index.html,support.html,styles.css,app.js"
           target: /var/www/shopeasy
 
       - name: Reload Nginx
