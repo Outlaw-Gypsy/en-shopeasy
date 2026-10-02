@@ -145,3 +145,7 @@ Live website updated
 If the validation step fails, GitHub Actions stops and the later steps never run.
 
 SCP is used instead of `git pull` on the server, so the EC2 instance never needs GitHub credentials.
+
+## CI/CD Deployment
+
+ShopEasy is deployed to an AWS EC2 instance through GitHub Actions. The workflow validates the application files, prepares the Nginx web server, copies the application files to the server, and reloads Nginx.
